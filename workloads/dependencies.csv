@@ -1,0 +1,10 @@
+# A small build pipeline. depends_on names the job that must finish first;
+# leave it blank (or write none / -) when a job has no prerequisite.
+name,arrival,burst,priority,depends_on
+Fetch sources,0,2,2,
+Build library,0,5,2,Fetch sources
+Compile app,1,4,1,Build library
+Lint,0,3,3,Fetch sources
+Run tests,2,6,1,Compile app
+Write docs,1,3,4,
+Package,3,2,2,Run tests

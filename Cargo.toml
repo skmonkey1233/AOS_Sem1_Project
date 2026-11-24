@@ -1,0 +1,18 @@
+[package]
+name = "smart_job_scheduler"
+version = "0.1.0"
+edition = "2021"
+description = "Smart Job Scheduling System - a CPU scheduling simulator (AOS mini project)"
+license = "MIT"
+readme = "README.md"
+
+[lib]
+name = "sjs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sjs"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3

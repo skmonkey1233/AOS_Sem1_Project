@@ -1,0 +1,14 @@
+# Build output
+/target
+
+# Local backups and editor files
+.bak-*/
+*.swp
+*~
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
